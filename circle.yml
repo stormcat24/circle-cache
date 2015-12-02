@@ -6,7 +6,7 @@ dependencies:
     - ~/advent
 
   override:
-    - echo hogehoge
+    - mkdir -p ~/advent
     - echo "`date +'%Y-%m-%d %H:%M:%S'` branch=$CIRCLE_BRANCH build_number=$CIRCLE_BUILD_NUM" >> ~/advent/build.log
 
 test:
